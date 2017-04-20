@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 app.post("/hipchatbot", function(req, res) {
 
   // Gets the message value from the Hipchat JSON webhook
-  var message = req.body.item.message.message;
+  var message = req.body.item.message.file;
   
   // Message posted back to Hipchat
-  res.json({ image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg"   });
+  res.json({ url: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg"   });
 
 });
 
